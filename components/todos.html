@@ -1,0 +1,7 @@
+<ul>
+    {{ range $_, $todo := . }}
+        {{ if $todo.Id }}
+            <li id="{{- $todo.Id -}}" hx-delete="/todos?id={{- $todo.Id -}}" hx-target="#todos">{{ $todo.Title }}</li>
+        {{ end }}
+    {{ end }}
+</ul>
