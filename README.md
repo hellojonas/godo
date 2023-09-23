@@ -36,3 +36,5 @@ cd godo
 go build
 ./godo
 ```
+
+4. Open your web browser and go to *http://localhost:8080*.
